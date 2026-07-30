@@ -1,0 +1,763 @@
+/* =========================================
+   CONTENU PRINCIPAL
+========================================= */
+
+.settings-main {
+
+    padding-top: 35px;
+
+    padding-right: 45px;
+
+    padding-bottom: 40px;
+
+    max-width: 1000px;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.settings-header {
+
+    margin-bottom: 25px;
+
+}
+
+
+.settings-header h1 {
+
+    margin-bottom: 5px;
+
+    color: #172b4d;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+}
+
+
+.settings-header p {
+
+    margin: 0;
+
+    color: #7a869a;
+
+    font-size: 13px;
+
+}
+
+
+
+/* =========================================
+   CARTE PARAMETRES
+========================================= */
+
+.settings-card {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 22px 25px;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+
+        0 3px 12px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.03
+
+        );
+
+}
+
+
+
+/* =========================================
+   HEADER CARTE
+========================================= */
+
+.settings-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.settings-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #f1f7ff;
+
+    color: #1976d2;
+
+    font-size: 21px;
+
+}
+
+
+.settings-card-header h2 {
+
+    margin: 0 0 4px 0;
+
+    color: #172b4d;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+.settings-card-header p {
+
+    margin: 0;
+
+    color: #7a869a;
+
+    font-size: 12px;
+
+}
+
+
+
+/* =========================================
+   CONTENU
+========================================= */
+
+.settings-content {
+
+    padding-left: 60px;
+
+}
+
+
+.settings-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #344054;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.settings-description {
+
+    margin: 5px 0 0 0;
+
+    color: #98a2b3;
+
+    font-size: 12px;
+
+}
+
+
+
+/* =========================================
+   SELECT LANGUE
+========================================= */
+
+.settings-select {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 45px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    color: #344054;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+
+                box-shadow 0.2s ease;
+
+}
+
+
+.settings-select:focus {
+
+    border-color: #1976d2;
+
+    box-shadow:
+
+        0 0 0 3px rgba(
+
+            25,
+
+            118,
+
+            210,
+
+            0.10
+
+        );
+
+}
+
+
+
+/* =========================================
+   MODE SOMBRE
+========================================= */
+
+.theme-setting {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+
+/* =========================================
+   SWITCH
+========================================= */
+
+.switch {
+
+    position: relative;
+
+    width: 50px;
+
+    height: 27px;
+
+    flex-shrink: 0;
+
+}
+
+
+.switch input {
+
+    width: 0;
+
+    height: 0;
+
+    opacity: 0;
+
+}
+
+
+.slider {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 30px;
+
+    background-color: #dfe3e8;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.slider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 21px;
+
+    height: 21px;
+
+    left: 3px;
+
+    top: 3px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+
+        0 2px 5px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.15
+
+        );
+
+}
+
+
+.switch input:checked + .slider {
+
+    background-color: #1976d2;
+
+}
+
+
+.switch input:checked + .slider::before {
+
+    transform: translateX(23px);
+
+}
+
+
+
+/* =========================================
+   FORMULAIRE MOT DE PASSE
+========================================= */
+
+.password-form {
+
+    padding-left: 60px;
+
+    max-width: 600px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 18px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #344054;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.password-input {
+
+    position: relative;
+
+}
+
+
+.password-input input {
+
+    width: 100%;
+
+    height: 45px;
+
+    padding:
+
+        0
+
+        45px
+
+        0
+
+        14px;
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 8px;
+
+    color: #344054;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+
+                box-shadow 0.2s ease;
+
+}
+
+
+.password-input input:focus {
+
+    border-color: #1976d2;
+
+    box-shadow:
+
+        0 0 0 3px rgba(
+
+            25,
+
+            118,
+
+            210,
+
+            0.10
+
+        );
+
+}
+
+
+.show-password {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #7a869a;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+
+.show-password:hover {
+
+    color: #1976d2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   RESPONSIVE TABLETTE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .settings-main {
+
+        padding-right: 3nan0px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .settings-main {
+
+        padding:
+
+            25px
+
+            20px;
+
+    }
+
+
+    .settings-header h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .settings-card {
+
+        padding: 20px;
+
+    }
+
+
+    .settings-content,
+
+    .password-form {
+
+        padding-left: 0;
+
+    }
+
+}
+
+
+
+/* =========================================
+   PETIT MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .settings-card-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .settings-icon {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+
+    }
+
+
+    .settings-card-header h2 {
+
+        font-size: 15px;
+
+    }
+
+
+    .theme-setting {
+
+        gap: 15px;
+
+    }
+
+
+    .save-password-button {
+
+        width: 100%;
+
+    }
+
+}
+/* =========================================
+   PARAMETRES - MODE SOMBRE
+========================================= */
+
+
+/* TITRE PRINCIPAL */
+
+html.dark-mode .settings-header h1 {
+
+    color: #f9fafb;
+
+}
+
+
+html.dark-mode .settings-header p {
+
+    color: #9ca3af;
+
+}
+
+
+/* CARTES */
+
+html.dark-mode .settings-card {
+
+    background-color: #1f2937;
+
+    border-color: #374151;
+
+    box-shadow:
+
+        0 3px 12px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.20
+
+        );
+
+}
+
+
+/* TITRES DES CARTES */
+
+html.dark-mode .settings-card-header h2 {
+
+    color: #f9fafb;
+
+}
+
+
+html.dark-mode .settings-card-header p {
+
+    color: #9ca3af;
+
+}
+
+
+/* LABELS */
+
+html.dark-mode .settings-label,
+
+html.dark-mode .form-group label {
+
+    color: #e5e7eb;
+
+}
+
+
+/* DESCRIPTION */
+
+html.dark-mode .settings-description {
+
+    color: #9ca3af;
+
+}
+
+
+/* SELECT */
+
+html.dark-mode .settings-select {
+
+    background-color: #374151;
+
+    border-color: #4b5563;
+
+    color: #ffffff;
+
+}
+
+
+/* INPUTS MOT DE PASSE */
+
+html.dark-mode .password-input input {
+
+    background-color: #374151;
+
+    border-color: #4b5563;
+
+    color: #ffffff;
+
+}
+
+
+/* PLACEHOLDER */
+
+html.dark-mode .password-input input::placeholder {
+
+    color: #9ca3af;
+
+}
+
+
+/* ICON OEIL */
+
+html.dark-mode .show-password {
+
+    color: #9ca3af;
+
+}
+
+
+
+.remote-header {
+
+    margin-bottom: 22px;
+
+
+}
+
+
+.remote-header h1 {
+
+    margin-bottom: 30px;
+
+    color: #172b4d;
+
+    font-size: 30px;
+
+   
+
+}
+
+
+
+
+
+.remote-header p {
+
+    margin: 0;
+
+    color: #7a869a;
+
+    font-size: 13px;
+
+}

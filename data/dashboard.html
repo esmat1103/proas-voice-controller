@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Voice Controller - Dashboard</title>
+
+
+<link
+href="css/bootstrap.min.css"
+rel="stylesheet"
+>
+
+<link
+rel="stylesheet"
+href="css/bootstrap-icons.min.css"
+>
+
+<link
+rel="stylesheet"
+href="css/dashboard.css"
+>
+
+</head>
+
+
+<body>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+
+<!-- LOGO -->
+
+<div class="sidebar-logo">
+
+
+<div class="sidebar-logo-icon">
+
+<i class="bi bi-mic-fill"></i>
+
+</div>
+
+
+
+<div class="sidebar-logo-text">
+
+<span>
+VOICE
+</span>
+
+
+<strong>
+CONTROLLER
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- MENU -->
+
+<nav class="sidebar-menu">
+
+
+
+<a
+href="dashboard.html"
+class="menu-item active"
+>
+
+<i class="bi bi-house-door"></i>
+
+
+<span data-i18n="dashboard">
+
+Tableau de bord
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="telecommande.html"
+class="menu-item"
+>
+
+<i class="bi bi-phone"></i>
+
+
+<span data-i18n="remote">
+
+Télécommande
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="commandes-vocales.html"
+class="menu-item"
+>
+
+<i class="bi bi-mic"></i>
+
+
+<span data-i18n="voiceCommands">
+
+Commandes vocales
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="apprentissage.html"
+class="menu-item"
+>
+
+<i class="bi bi-cpu"></i>
+
+
+<span data-i18n="learning">
+
+Apprentissage
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="historique.html"
+class="menu-item"
+>
+
+<i class="bi bi-clock-history"></i>
+
+
+<span data-i18n="history">
+
+Historique
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="parametres.html"
+class="menu-item"
+>
+
+<i class="bi bi-gear"></i>
+
+
+<span data-i18n="settings">
+
+Paramètres
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="profil.html"
+class="menu-item"
+>
+
+<i class="bi bi-person"></i>
+
+
+<span data-i18n="profile">
+
+Profil
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a
+href="a-propos.html"
+class="menu-item"
+>
+
+<i class="bi bi-info-circle"></i>
+
+
+<span data-i18n="about">
+
+À propos
+
+</span>
+
+
+</a>
+
+
+
+</nav>
+
+
+
+
+
+<!-- DECONNEXION -->
+
+
+<div class="sidebar-bottom">
+
+
+<a
+href="#"
+onclick="logout()"
+class="menu-item logout"
+>
+
+
+<i class="bi bi-box-arrow-right"></i>
+
+
+<span data-i18n="logout">
+
+Déconnexion
+
+</span>
+
+
+</a>
+
+
+</div>
+
+
+
+</aside>
+<!-- =================================
+     CONTENU PRINCIPAL
+================================== -->
+
+
+<main class="main-content">
+
+
+
+<!-- HEADER -->
+
+<header class="topbar">
+
+
+<div>
+
+<h1>
+
+</h1>
+
+
+</div>
+
+
+
+<div class="user-profile">
+
+
+<i class="bi bi-person-circle"></i>
+
+
+<span
+id="username-display"
+data-i18n="user">
+
+Utilisateur
+
+</span>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- CONTENU -->
+
+
+<section class="dashboard-content">
+
+
+
+<div class="welcome-card">
+
+
+<div>
+
+
+<h2 data-i18n="welcome">
+
+Bienvenue 👋
+
+</h2>
+
+
+
+<p data-i18n="welcomeText">
+
+Contrôlez vos appareils grâce à votre voix.
+
+</p>
+
+
+</div>
+
+
+
+<i class="bi bi-mic-fill"></i>
+
+
+
+</div>
+
+
+
+
+
+<!-- STATISTIQUES -->
+
+
+<div class="stats-grid">
+
+
+
+<!-- COMMANDES ENREGISTREES -->
+
+
+<div class="stat-card">
+
+
+<div class="stat-icon blue">
+
+<i class="bi bi-bookmark-check-fill"></i>
+
+</div>
+
+
+
+<div>
+
+
+<h3 id="commandesEnregistrees">
+
+</h3>
+
+
+<p data-i18n="savedCommands">
+
+Commandes enregistrées
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- TOTAL COMMANDES -->
+
+
+<div class="stat-card">
+
+
+<div class="stat-icon green">
+
+<i class="bi bi-list-check"></i>
+
+</div>
+
+
+
+<div>
+
+
+<h3 id="totalCommandes">
+
+13
+
+</h3>
+
+
+<p data-i18n="totalCommands">
+
+Total commandes
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- COMMANDES NON ENREGISTREES -->
+
+
+<div class="stat-card">
+
+
+<div class="stat-icon orange">
+
+<i class="bi bi-exclamation-triangle-fill"></i>
+
+</div>
+
+
+
+<div>
+
+
+<h3 id="commandesNonEnregistrees">
+
+</h3>
+
+
+<p data-i18n="unsavedCommands">
+
+Commandes non enregistrées
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+
+<script src="js/translations.js"></script>
+
+<script src="js/language.js"></script>
+
+<script src="js/theme.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/auth.js"></script>
+
+
+
+</body>
+
+</html>

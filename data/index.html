@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title data-i18n="loginTitle">
+    Voice Controller - Connexion
+</title>
+
+
+<!-- Bootstrap -->
+
+<link
+href="css/bootstrap.min.css"
+rel="stylesheet"
+>
+
+<!-- Bootstrap Icons -->
+
+
+<link
+rel="stylesheet"
+href="css/bootstrap-icons.min.css"
+>
+
+
+
+
+<!-- CSS -->
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<main class="login-page">
+
+
+
+<div class="background-circle circle-one"></div>
+
+<div class="background-circle circle-two"></div>
+
+
+
+
+
+<div class="login-card">
+
+
+
+
+
+<!-- LOGO -->
+
+<div class="logo-container">
+
+
+<div class="logo-icon">
+
+<i class="bi bi-mic-fill"></i>
+
+</div>
+
+
+
+<div class="logo-text">
+
+<span>
+VOICE
+</span>
+
+
+<strong>
+CONTROLLER
+</strong>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SOUS TITRE -->
+
+<p 
+class="login-subtitle"
+data-i18n="loginSubtitle"
+>
+
+Connectez-vous à votre compte
+
+</p>
+
+
+
+
+
+
+
+<!-- FORMULAIRE -->
+
+<form id="loginForm">
+
+
+
+
+
+
+<!-- IDENTIFIANT -->
+
+<div class="form-group">
+
+
+<label 
+for="username"
+data-i18n="username"
+>
+
+Identifiant
+
+</label>
+
+
+
+<div class="input-wrapper">
+
+
+<i class="bi bi-person input-icon"></i>
+
+
+
+<input
+
+type="text"
+
+id="username"
+
+class="form-control"
+
+data-i18n-placeholder="usernamePlaceholder"
+
+placeholder="Entrez votre identifiant"
+
+required
+
+>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- MOT DE PASSE -->
+
+<div class="form-group">
+
+
+<label
+
+for="password"
+
+data-i18n="password"
+
+>
+
+Mot de passe
+
+</label>
+
+
+
+
+<div class="input-wrapper">
+
+
+
+<i class="bi bi-lock input-icon"></i>
+
+
+
+
+
+<input
+
+type="password"
+
+id="password"
+
+class="form-control"
+
+data-i18n-placeholder="passwordPlaceholder"
+
+placeholder="Entrez votre mot de passe"
+
+required
+
+>
+
+
+
+
+
+<button
+
+type="button"
+
+id="togglePassword"
+
+class="password-toggle"
+
+>
+
+
+
+<i
+
+id="eyeIcon"
+
+class="bi bi-eye-slash"
+
+></i>
+
+
+
+</button>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- BOUTON -->
+
+<button
+
+type="submit"
+
+class="btn-login"
+
+data-i18n="loginButton"
+
+>
+
+Se connecter
+
+</button>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<!-- Scripts traduction -->
+
+<script src="js/translations.js"></script>
+
+<script src="js/language.js"></script>
+
+
+
+<!-- Scripts connexion -->
+
+<script src="js/script.js"></script>
+
+<script src="js/theme.js"></script>
+
+
+
+</body>
+
+
+</html>
