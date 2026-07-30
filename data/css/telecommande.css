@@ -1,0 +1,1573 @@
+/* =========================================
+   CONTENU PRINCIPAL
+========================================= */
+
+.remote-main {
+
+    padding-top: 35px;
+
+    padding-right: 45px;
+
+    padding-bottom: 40px;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.remote-header {
+
+    margin-bottom: 22px;
+
+}
+
+
+.remote-header h1 {
+
+    margin-bottom: 5px;
+
+    color: #172b4d;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+}
+
+
+.remote-header p {
+
+    margin: 0;
+
+    color: #7a869a;
+
+    font-size: 13px;
+
+}
+
+
+
+/* =========================================
+   SELECTION DES APPAREILS
+========================================= */
+
+.device-selector {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    max-width: 850px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.device-card {
+
+    min-height: 92px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 9px;
+
+    background-color: #ffffff;
+
+    color: #344054;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.device-card i {
+
+    color: #53657a;
+
+    font-size: 23px;
+
+}
+
+
+.device-card span {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.device-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: #b8d8fb;
+
+    box-shadow:
+
+        0 5px 15px rgba(
+
+            25,
+
+            118,
+
+            210,
+
+            0.10
+
+        );
+
+}
+
+
+.device-card.active {
+
+    border: 2px solid #d4e7fb;
+
+    background-color: #f1f7ff;
+
+}
+
+
+.device-card.active i {
+
+    color: #1976d2;
+
+}
+
+
+
+/* =========================================
+   TELECOMMANDE PRINCIPALE
+========================================= */
+
+.remote-control {
+
+    max-width: 850px;
+
+    min-height: 350px;
+
+    display: grid;
+
+    grid-template-columns: 110px 1fr 110px;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px 10px;
+
+}
+
+
+
+/* =========================================
+   COLONNES LATERALES
+========================================= */
+
+.remote-side {
+
+    height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+}
+
+
+
+/* =========================================
+   CENTRE
+========================================= */
+.remote-center {
+
+    min-height: 350px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+
+/* =========================================
+   BOUTONS GENERAUX
+========================================= */
+
+.remote-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #edf0f4;
+
+    background-color: #ffffff;
+
+    color: #344054;
+
+    cursor: pointer;
+
+    transition:
+
+        transform 0.15s ease,
+
+        box-shadow 0.15s ease,
+
+        background-color 0.15s ease;
+
+}
+
+
+.remote-button:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+
+        0 5px 14px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.08
+
+        );
+
+}
+
+
+.remote-button:active {
+
+    transform: scale(0.90);
+
+    background-color: #f1f7ff;
+
+}
+
+
+
+/* =========================================
+   POWER
+========================================= */
+
+.power-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    color: #ef4444;
+
+    font-size: 27px;
+
+    box-shadow:
+
+        0 4px 15px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.05
+
+        );
+
+}
+
+
+
+/* =========================================
+   RETOUR
+========================================= */
+
+.back-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+}
+
+
+
+/* =========================================
+   HOME
+========================================= */
+
+.home-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================================
+   CONTROLES CHANNEL / VOLUME
+========================================= */
+
+.vertical-control {
+
+    width: 95px;
+
+    padding: 12px 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: 50px;
+
+    background-color: #f3f5f7;
+
+    box-shadow:
+
+        inset 0 0 0 1px #e5e8ec;
+
+}
+
+
+.small-control-button {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+}
+
+
+.control-label {
+
+    color: #7a869a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+/* =========================================
+   NAVIGATION CIRCULAIRE
+========================================= */
+
+.navigation-control {
+
+    position: relative;
+
+    width: 210px;
+
+    height: 210px;
+
+    border-radius: 50%;
+
+    background-color: #f3f5f7;
+
+    box-shadow:
+
+        inset 0 0 0 1px #e5e8ec;
+
+}
+
+
+
+/* =========================================
+   BOUTONS DIRECTIONNELS
+========================================= */
+
+.navigation-button {
+
+    position: absolute;
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    color: #172b4d;
+
+    cursor: pointer;
+
+    transition:
+
+        transform 0.15s ease,
+
+        box-shadow 0.15s ease,
+
+        background-color 0.15s ease;
+
+}
+
+
+.navigation-button:hover {
+
+    box-shadow:
+
+        0 5px 14px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.10
+
+        );
+
+}
+
+
+.nav-up {
+
+    top: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.nav-down {
+
+    bottom: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.nav-left {
+
+    top: 50%;
+
+    left: 18px;
+
+    transform: translateY(-50%);
+
+}
+
+
+.nav-right {
+
+    top: 50%;
+
+    right: 18px;
+
+    transform: translateY(-50%);
+
+}
+
+
+
+/* =========================================
+   EFFET CLIC DES FLECHES
+========================================= */
+
+.nav-up:active,
+
+.nav-down:active {
+
+    transform: translateX(-50%) scale(0.90);
+
+    background-color: #f1f7ff;
+
+}
+
+
+.nav-left:active,
+
+.nav-right:active {
+
+    transform: translateY(-50%) scale(0.90);
+
+    background-color: #f1f7ff;
+
+}
+
+
+
+/* =========================================
+   BOUTON OK CENTRAL
+========================================= */
+
+.ok-button {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 75px;
+
+    height: 75px;
+
+    transform: translate(
+
+        -50%,
+
+        -50%
+
+    );
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    color: #344054;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 3px 10px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.08
+
+        );
+
+    transition:
+
+        transform 0.15s ease,
+
+        box-shadow 0.15s ease,
+
+        background-color 0.15s ease;
+
+}
+
+
+.ok-button:hover {
+
+    box-shadow:
+
+        0 5px 14px rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.12
+
+        );
+
+}
+
+
+.ok-button:active {
+
+    transform: translate(
+
+        -50%,
+
+        -50%
+
+    ) scale(0.90);
+
+    background-color: #f1f7ff;
+
+}
+
+
+
+/* =========================================
+   BOUTONS COULEURS
+========================================= */
+
+.remote-bottom {
+
+    max-width: 850px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding: 0 10px;
+
+}
+
+
+.color-buttons {
+
+    display: flex;
+
+    gap: 22px;
+
+}
+
+
+.color-button {
+
+    width: 43px;
+
+    height: 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition:
+
+        transform 0.2s ease,
+
+        box-shadow 0.2s ease;
+
+}
+
+
+.color-button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.color-button:active {
+
+    transform: scale(0.90);
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE TABLETTE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .remote-control {
+
+        grid-template-columns: 90px 1fr 90px;
+
+        gap: 15px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .remote-main {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .device-selector {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .remote-control {
+
+        grid-template-columns: 80px 1fr 80px;
+
+        gap: 10px;
+
+    }
+
+
+    .navigation-control {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .navigation-button {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    .nav-up {
+
+        top: 15px;
+
+    }
+
+
+    .nav-down {
+
+        bottom: 15px;
+
+    }
+
+
+    .nav-left {
+
+        left: 15px;
+
+    }
+
+
+    .nav-right {
+
+        right: 15px;
+
+    }
+
+
+    .vertical-control {
+
+        width: 80px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   PETIT MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .remote-control {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .remote-side {
+
+        height: auto;
+
+        flex-direction: row;
+
+        gap: 20px;
+
+    }
+
+
+    .remote-center {
+
+        gap: 25px;
+
+    }
+
+
+    .navigation-control {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+
+    .remote-bottom {
+
+        justify-content: center;
+
+    }
+
+}
+/* =========================================
+   RETOUR
+========================================= */
+
+.return-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================================
+   SORTIE
+========================================= */
+
+.exit-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================================
+   HOME
+========================================= */
+
+.home-button {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+}
+
+
+.return-button i {
+    transform: scaleY(-1);
+}
+
+/* =========================================
+   TABLETTE
+========================================= */
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1800px) {
+
+    .remote-main {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .device-selector {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .remote-control {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .remote-side {
+
+        height: auto;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        gap: 25px;
+
+    }
+
+
+    .remote-center {
+
+        min-height: auto;
+
+        flex-direction: row;
+
+        gap: 12px;
+
+    }
+
+
+    .vertical-control {
+
+        width: 75px;
+
+        padding: 8px 5px;
+
+    }
+
+
+    .small-control-button {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .navigation-control {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .navigation-button {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   PETIT MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .remote-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .remote-center {
+
+        gap: 5px;
+
+    }
+
+
+    .vertical-control {
+
+        width: 65px;
+
+    }
+
+
+    .small-control-button {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 16px;
+
+    }
+
+
+    .control-label {
+
+        font-size: 8px;
+
+    }
+
+
+    .navigation-control {
+
+        width: 155px;
+
+        height: 155px;
+
+    }
+
+
+    .navigation-button {
+
+        width: 43px;
+
+        height: 43px;
+
+    }
+
+
+    .ok-button {
+
+        width: 62px;
+
+        height: 62px;
+
+    }
+
+
+    .remote-side {
+
+        gap: 15px;
+
+    }
+
+}
+/* =========================================
+   TELECOMMANDE - DARK MODE
+   Compatible Dashboard Dark Mode
+========================================= */
+
+
+/* CONTENU PRINCIPAL */
+
+html.dark-mode .remote-header h1 {
+
+    color: #F8FAFC;
+
+}
+
+
+html.dark-mode .remote-header p {
+
+    color: #94A3B8;
+
+}
+
+
+
+/* =========================================
+   SELECTION APPAREILS
+========================================= */
+
+
+html.dark-mode .device-card {
+
+    background-color: #1E293B;
+
+    border-color: #334155;
+
+    color: #E2E8F0;
+
+}
+
+
+
+html.dark-mode .device-card i {
+
+    color: #94A3B8;
+
+}
+
+
+
+html.dark-mode .device-card:hover {
+
+    border-color: #3B82F6;
+
+    box-shadow:
+
+        0 5px 15px rgba(
+            59,
+            130,
+            246,
+            0.20
+        );
+
+}
+
+
+
+html.dark-mode .device-card.active {
+
+    background-color: rgba(
+        37,
+        99,
+        235,
+        0.18
+    );
+
+    border-color: #2563EB;
+
+}
+
+
+
+html.dark-mode .device-card.active i {
+
+    color: #60A5FA;
+
+}
+
+
+
+/* =========================================
+   BOUTONS TELECOMMANDE
+========================================= */
+
+
+html.dark-mode .remote-button {
+
+    background-color: #1E293B;
+
+    border-color: #334155;
+
+    color: #E2E8F0;
+
+}
+
+
+
+html.dark-mode .remote-button:hover {
+
+    box-shadow:
+
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.35
+        );
+
+}
+
+
+
+html.dark-mode .remote-button:active {
+
+    background-color: rgba(
+        96,
+        165,
+        250,
+        0.15
+    );
+
+}
+
+
+
+/* =========================================
+   CONTROLES VOLUME / CHANNEL
+========================================= */
+
+
+html.dark-mode .vertical-control {
+
+    background-color: #0F172A;
+
+    box-shadow:
+
+        inset 0 0 0 1px #334155;
+
+}
+
+
+
+html.dark-mode .control-label {
+
+    color: #94A3B8;
+
+}
+
+
+
+/* =========================================
+   NAVIGATION CIRCULAIRE
+========================================= */
+
+
+html.dark-mode .navigation-control {
+
+    background-color: #0F172A;
+
+    box-shadow:
+
+        inset 0 0 0 1px #334155;
+
+}
+
+
+
+html.dark-mode .navigation-button {
+
+    background-color: #1E293B;
+
+    border-color: #334155;
+
+    color: #F8FAFC;
+
+}
+
+
+
+html.dark-mode .navigation-button:hover {
+
+    box-shadow:
+
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.40
+        );
+
+}
+
+
+
+html.dark-mode .navigation-button:active {
+
+    background-color: rgba(
+        96,
+        165,
+        250,
+        0.15
+    );
+
+}
+
+
+
+/* =========================================
+   BOUTON OK CENTRAL
+========================================= */
+
+
+html.dark-mode .ok-button {
+
+    background-color: #1E293B;
+
+    border-color: #334155;
+
+    color: #F8FAFC;
+
+}
+
+
+
+html.dark-mode .ok-button:hover {
+
+    box-shadow:
+
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.45
+        );
+
+}
+
+
+
+html.dark-mode .ok-button:active {
+
+    background-color: rgba(
+        96,
+        165,
+        250,
+        0.15
+    );
+
+}
+
+
+
+/* =========================================
+   POWER BUTTON
+========================================= */
+
+
+html.dark-mode .power-button {
+
+    color: #F87171;
+
+}
+
+
+
+/* =========================================
+   BOUTONS COULEURS
+========================================= */
+
+
+html.dark-mode .color-button {
+
+    box-shadow:
+
+        0 3px 10px rgba(
+            0,
+            0,
+            0,
+            0.35
+        );
+
+}
+
+
+/* =====================================
+   ETAT APPRENTISSAGE BOUTONS
+===================================== */
+
+
+.learn-button.non-appris {
+
+    border:3px solid #dc3545 !important;
+
+    box-shadow:
+    0 0 8px rgba(220,53,69,0.5);
+
+}
+
+
+
+.learn-button.appris {
+
+    border:3px solid #198754 !important;
+
+    box-shadow:
+    0 0 10px rgba(25,135,84,0.6);
+
+}
+
+html.dark-mode .learning-container p {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   GRAND ECRAN > 1000px
+   TELECOMMANDE CENTREE + ZOOM LEGER
+========================================= */
+
+@media (min-width: 1000px) {
+
+
+    .remote-control {
+
+        margin-left: auto;
+        margin-right: auto;
+
+        transform: scale(1.10);
+
+        transform-origin: top center;
+
+    }
+
+
+
+    /* Boutons principaux */
+
+    .power-button,
+    .return-button,
+    .exit-button,
+    .home-button,
+    .back-button,
+    .menu-button {
+
+        width: 68px;
+        height: 68px;
+
+        font-size: 24px;
+
+    }
+
+
+
+    /* Volume / Channel */
+
+    .vertical-control {
+
+        width: 100px;
+
+        padding: 12px;
+
+    }
+
+
+    .small-control-button {
+
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 21px;
+
+    }
+
+
+
+    /* Navigation */
+
+    .navigation-control {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+
+    .navigation-button {
+
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 20px;
+
+    }
+
+
+
+    /* OK */
+
+    .ok-button {
+
+        width: 75px;
+
+        height: 75px;
+
+        font-size: 18px;
+
+    }
+
+
+
+    /* Boutons couleurs */
+
+    .color-button {
+
+        width: 50px;
+
+        height: 22px;
+
+    }
+
+
+    .remote-bottom {
+
+        justify-content: center;
+
+    }
+
+}

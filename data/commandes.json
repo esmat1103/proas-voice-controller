@@ -1,0 +1,17 @@
+[
+  {
+    "nom":"power",
+    "codeIR":"En attente",
+    "voiceSaved":false
+  },
+  {
+    "nom":"ok",
+    "codeIR":"En attente",
+    "voiceSaved":false
+  },
+  {
+    "nom":"home",
+    "codeIR":"En attente",
+    "voiceSaved":false
+  }
+]
